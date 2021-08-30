@@ -14,7 +14,8 @@ export default function Category(props){
                                                                          name={item.name}
                                                                          descrition={item.descrition}
                                                                          price={item.price}
-                                                                         
+                                                                         dishes={dishes}
+                                                                         setDishes={setDishes}
                                                                          key={index}
                                                                          />))}  
             </div>
