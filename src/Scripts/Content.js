@@ -1,7 +1,7 @@
 import Category from "./Category";
-
-export default function Content(){
-    const dishesTitle = ['Primeiro, seu prato','Agora, sua bebida',' Por fim, sua sobremesa'];
+export default function Content(props){
+    const{dishes, setDishes} = props;
+    
     const itens = [[{title:'Primeiro, seu prato',item:[{img: "Assets/pizza-peperoni.jpg",
                                                         name:'Pizza',
                                                         descrition: 'Queijo, pepperoni, massa',
@@ -51,8 +51,10 @@ export default function Content(){
                                                         descrition: 'Leite, chuchu, açucar',
                                                         price: 'R$6.90'}]}]]
     return(
-        <div class="content">
-             { itens.map(item =>  <Category itens={item} />)} 
+        <div className="content">
+             { itens.map((item, index) =>  <Category key={index} itens={item} 
+                                                     dishes={dishes} setDishes={setDishes} />)} 
         </div>
     );
 }
+

@@ -1,32 +1,39 @@
 export default function CheckOrder(){
-    return(
-        <div class="check-order invisible" >
 
-            <div class="confirmation font-roboto font-size-22">
+    function closeOrder(){
+
+    }
+    function cancelOrder(){
+
+    }
+    return(
+        <div className="check-order invisible" >
+
+            <div className="confirmation font-roboto font-size-22">
                 <strong>Confirme seu pedido</strong> 
             </div>
 
-            <div class="chosen-dish font-roboto font-size-22">
+            <div className="chosen-dish font-roboto font-size-22">
                 
             </div>
 
-            <div class="chosen-beverage font-roboto font-size-22">
+            <div className="chosen-beverage font-roboto font-size-22">
                 
             </div>
 
-            <div class="chosen-dessert font-roboto font-size-22">
+            <div className="chosen-dessert font-roboto font-size-22">
                 
             </div>
 
-            <div class="total-price font-roboto font-size-22">
+            <div className="total-price font-roboto font-size-22">
                 <strong>TOTAL  </strong>
             </div>
 
-            <div class="close-order-button font-roboto font-size-22" onclick="closeOrder();">
+            <div className="close-order-button font-roboto font-size-22" onClick={closeOrder}>
                 Tudo certo, pode pedir!
             </div>
 
-            <div class="cancel-button font-roboto font-size-22" onclick="cancelOrder();">
+            <div className="cancel-button font-roboto font-size-22" onClick={cancelOrder}>
                 Cancelar
             </div>
 

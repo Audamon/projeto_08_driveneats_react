@@ -91,6 +91,10 @@ body{
 
 .dish-price{
     color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 /* .category-dessert{
@@ -255,7 +259,7 @@ a{
 }
 
 .invisible{
-    display: none;
+    display: none !important;
 }
 /*ORDER*/
 
@@ -313,4 +317,26 @@ strong{
 
     background-color: #32b72f;
 
+}
+
+.minus{
+    font-size: 20px;
+    border: none;
+    background-color: #ffffff;
+    color: red;
+}
+.plus{
+    font-size: 20px;
+    border: none;
+    background-color: #ffffff;
+    color: green;
+}
+.cell{
+    font-size: 15px;
+}
+.counter{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }

@@ -1,10 +1,15 @@
 export default function Bottombar(){
+
+    function confirmOrder(){
+        
+    }
+
     return(
-        <div class="bottom-bar">
+        <div className="bottom-bar">
 
-            <div class="rectangle-button font-roboto font-size-20" onclick="confirmOrder();" >
+            <div className="rectangle-button font-roboto font-size-20" onClick={confirmOrder} >
 
-                <div class="button-text ">  
+                <div className="button-text ">  
                     Selecione os 3 itens para fechar o pedido 
                 </div>
 
